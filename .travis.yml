@@ -37,7 +37,7 @@ matrix:
 
 install:
   - haxelib install haxe-doctest
-  - haxelib git travix https://github.com/back2dos/travix && pushd . && cd $(haxelib config)travix/git && haxe build-neko.hxml && popd
+  - haxelib git travix https://github.com/sebthom/travix  && pushd . && cd $(haxelib config)travix/git && git checkout flash_update && haxe build-neko.hxml && popd
   - haxelib run travix install
 
 script:
